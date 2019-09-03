@@ -14,8 +14,8 @@
 
    ```
    [('a': 1), ('b': 2), ('c': 3), ('d':4)]
-   {0 : 0, 1 : 1, 2 : 0, 3 : 9, 4 : 0}
-   10
+   {1: 'item1', 3: 'item9'}
+  6
    
    ```
 
@@ -31,7 +31,7 @@
    答案：
 
    ```
-   6, 7
+  42
    
    ```
 
@@ -62,7 +62,8 @@
    答案：
 
    ```Python
-  { key : value for key, value in prices.items() if value > 100}
+   {key: value for key, value in prices.items() if prices[key] == max(prices.values())}
+  {key : value for key, value in prices.items() if value > 100}
    
    ```
 
@@ -71,7 +72,8 @@
    答案：
 
    ```Python
-   
+   li = []
+   [item2 for item1 in li for item2 in item1]
    ```
 
 6. 写一个函数，传入的参数是一个列表（列表中的元素可能也是一个列表），返回该列表最大的嵌套深度，例如：
