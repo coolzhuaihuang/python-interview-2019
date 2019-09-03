@@ -13,6 +13,9 @@
    答案：
 
    ```
+   [('a': 1), ('b': 2), ('c': 3), ('d':4)]
+   {0 : 0, 1 : 1, 2 : 0, 3 : 9, 4 : 0}
+   10
    
    ```
 
@@ -28,6 +31,7 @@
    答案：
 
    ```
+   6, 7
    
    ```
 
@@ -58,6 +62,7 @@
    答案：
 
    ```Python
+  { key : value for key, value in prices.items() if value > 100}
    
    ```
 
@@ -102,6 +107,22 @@
     答案：
 
     ```Python
+    import threading
+    def f():
+         he = 0
+         for i in range(101):
+            he += i
+         return he 
+    def main():
+      threads  = [threading.Threading(target=f() for _ in range(5))]
+     for thread in threads:
+         thread.start()
+     for thread in threads:
+         thread.join()
+     if __name__ == __main__:
+         main()
+    
+      
     
     ```
 
@@ -110,6 +131,8 @@
     答案：
 
     ```
+    Python内存管理是由Python的内存解释器负责的，开发人员可以从内存管理事务中解放出来，致力于应用程序的开发，使得开发的程序错误更少，
+    程序更健壮，开发周期更短
     
     ```
 
@@ -169,6 +192,7 @@
     答案：
 
     ```
+    https在http基础上增加了ssl协议，通过ssl证书验证服务器，为浏览器和服务器之间消息传递提供加密
     
     ```
 
